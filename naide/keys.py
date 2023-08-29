@@ -1,4 +1,4 @@
-from ..menubar import Save, selectall, autosaveevent
+from .menubar import Save, selectall, autosaveevent
 def process_window(window, txt):
   window.bind('<Control-s>', Save)
   window.bind('<Control-a>', selectall)

@@ -7,7 +7,7 @@ def stpath(New):
   if New is None:
     return
   path = New
-  return path
+  return New
 
 def gtpath():
   return path
@@ -15,7 +15,7 @@ def gtpath():
 def sttxt(New) -> None:
   global TextEditor
   TextEditor = New
-  return TextEditor
+  return New
 
 def gttxt():
   return TextEditor

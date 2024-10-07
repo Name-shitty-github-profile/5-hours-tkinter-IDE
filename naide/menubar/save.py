@@ -9,7 +9,7 @@ def Save(*args):
   path = gtpath()
   if path is None:
     SaveAs()
-    return None
+    return
   with open(path, 'w') as f:
     f.write(gttxt().get('1.0', END))
 

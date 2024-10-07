@@ -6,7 +6,7 @@ def Open():
     f = open(path, 'r')
   except:
     popup("Error", f"No such file as {path}")
-    return None
+    return
   textEditor.delete('1.0', END)
   textEditor.insert('1.0', f.read())
 
@@ -14,11 +14,11 @@ def ReOpen():
   path = gtpath()
   if path is None:
     Open()
-    return None
+    return
   try:
     f = open(path, 'r')
   except:
     Open()
-    return None
+    return
   textEditor.delete('1.0', END)
   textEditor.insert('1.0', f.read())
